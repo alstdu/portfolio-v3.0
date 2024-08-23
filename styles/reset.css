@@ -20,7 +20,8 @@ img, video {
 }
 
 ol, ul {
-    list-style: none;
+    list-style-type: none;
+    text-decoration: none;
 }
 
 table {
