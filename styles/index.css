@@ -3,3 +3,114 @@ body {
     font-weight: 500;
 }
 
+main {
+    margin: 0 10em;
+}
+
+.navigation-bar-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.navigation-bar-container>nav>ul {
+    display: flex;
+    flex-direction: row;
+    padding: 1.5em;
+}
+
+.navigation-bar-container>nav>ul>li {
+    padding: 1em;
+}
+
+.linkedin-link {
+    font-weight: bold;
+}
+
+.logo {
+    max-width: 9.5em;
+}
+
+header {
+    display: flex;
+    max-width: 100%;
+    padding-top: 2em;
+}
+
+.header-text {
+    flex: 1.4;
+    letter-spacing: .5px;
+    margin-right: 4em;
+}
+
+.header-text > h1 {
+    font-weight: 700;
+    font-size: 4rem;
+    line-height: 1;
+}
+
+.welcome-tagline {
+    font-weight: bold;
+}
+
+.lexi-span {
+    color: #CB67FF;
+}
+
+.subtitle-text {
+    margin-top: 1.5em;
+    margin-bottom: 1.5em;
+}
+
+.cta-button {
+    padding: .5em 2em;
+    border-radius: 30px;
+    color: white;
+    background-color: #CB67FF;
+}
+
+.gradient-button {
+    background: linear-gradient(to right, #74C0FC, #CB67FF);
+    /* Adjust the background size for animation */
+    background-size: 200% 100%;
+    /* Initial background position */
+    background-position: 0% 0%;
+    color: white;
+    padding: .5em 1.2em;
+    border-radius: 30px;
+    font-size: 1rem;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-position 0.3s ease;
+}
+
+.gradient-button:hover {
+    background-position: 100% 0%;
+}
+
+.header-testimonial {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    border-radius: 10px;
+    padding: 1em;
+    flex: 2;
+}
+
+.header-testimonial > img {
+    max-width: 15em;
+}
+
+.testimonial-block {
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+    padding: 1em;
+}
+
+.testimonial-content {
+    font-weight: bold;
+}
+
+.testimonial-author {
+    margin-top: 1em;
+}
