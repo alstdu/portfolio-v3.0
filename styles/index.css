@@ -64,6 +64,7 @@ header {
 }
 
 .cta-button {
+    font-weight: bold;
     padding: .5em 2em;
     border-radius: 30px;
     color: white;
@@ -80,7 +81,6 @@ header {
     padding: .5em 1.2em;
     border-radius: 30px;
     font-size: 1rem;
-    font-weight: bold;
     cursor: pointer;
     transition: background-position 0.3s ease;
 }
@@ -113,4 +113,11 @@ header {
 
 .testimonial-author {
     margin-top: 1em;
+}
+
+.section-title {
+    font-weight: 700;
+    font-size: 3rem;
+    margin-top: 2.5em;
+    margin-bottom: .2em;
 }
