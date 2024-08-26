@@ -121,3 +121,59 @@ header {
     margin-top: 2.5em;
     margin-bottom: .2em;
 }
+
+/* FEATURED PROJECTS SECTION */
+
+.project-cards {
+    display: flex;
+    justify-content: space-between;
+    gap: 1rem;
+}
+
+.project-card {
+    background-color: #ffffff;
+    padding: 1rem;
+    max-width: 30em;
+    text-align: left;
+}
+
+.project-card img {
+    max-width: 100%;
+    border-radius: 10px;
+    margin-bottom: 1rem;
+    box-shadow: 0px 0px 4px rgba(0, 0, 0, 0.1);
+}
+
+.project-title {
+    font-size: 1.25rem;
+    font-weight: 700;
+    margin-bottom: 0.5rem;
+}
+
+.project-content {
+    font-size: 1rem;
+    margin-bottom: 1rem;
+}
+
+.project-tags {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.project-tag {
+    padding: .5em 1em;
+    border-radius: 20px;
+    box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* SKILLS SECTION */
+
+.skill-logos-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr); /* 4 columns of equal width */
+    grid-template-rows: repeat(4, auto); /* 4 rows of auto height */
+    gap: 1rem; /* Space between the grid items */
+    padding: 1rem;
+}
