@@ -1,36 +1,5 @@
-body {
-    font-family: 'Montserrat', sans-serif;
-    font-weight: 500;
-}
 
-main {
-    margin: 0 10em;
-}
-
-.navigation-bar-container {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    width: 100%;
-}
-
-.navigation-bar-container>nav>ul {
-    display: flex;
-    flex-direction: row;
-    padding: 1.5em;
-}
-
-.navigation-bar-container>nav>ul>li {
-    padding: 1em;
-}
-
-.linkedin-link {
-    font-weight: bold;
-}
-
-.logo {
-    max-width: 9.5em;
-}
+/* HERO SECTION */
 
 header {
     display: flex;
@@ -175,4 +144,9 @@ header {
     grid-template-rows: repeat(4, auto); /* 4 rows of auto height */
     gap: 1rem; /* Space between the grid items */
     padding: 1rem;
+}
+
+.skill-logo {
+    aspect-ratio: 1;
+    max-width: 70px;
 }
