@@ -1,0 +1,46 @@
+body {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 500;
+}
+
+main {
+    margin: 0 10em;
+}
+
+/* NAV */
+
+.navigation-bar-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.navigation-bar-container>nav>ul {
+    display: flex;
+    flex-direction: row;
+    padding: 1.5em;
+}
+
+.navigation-bar-container>nav>ul>li {
+    padding: 1em;
+}
+
+.linkedin-link {
+    font-weight: bold;
+}
+
+.logo {
+    max-width: 9.5em;
+}
+
+/* FOOTER */
+
+footer {
+    margin-top: 8em;
+}
+
+.footer-logo {
+    margin-top: 1em;
+    border-bottom: 1px solid rgb(225, 225, 225);
+}
