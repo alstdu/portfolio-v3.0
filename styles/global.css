@@ -40,7 +40,14 @@ footer {
     margin-top: 8em;
 }
 
-.footer-logo {
-    margin-top: 1em;
+.top-footer-wrapper {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
     border-bottom: 1px solid rgb(225, 225, 225);
+}
+
+.footer-logo {
+    margin-bottom: 1em;
 }
