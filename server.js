@@ -1,36 +1,44 @@
 import express from 'express';
-import cors from 'cors';
 import fetch from 'node-fetch';
+import path from 'path';
 import { fileURLToPath } from 'url';
-import { dirname, join } from 'path';
 
 const app = express();
-const PORT = process.env.PORT || 3001;
+const port = 3001;
 
-// Use import.meta.url to get the directory name
+// Resolve __dirname for ES module
 const __filename = fileURLToPath(import.meta.url);
-const __dirname = dirname(__filename);
+const __dirname = path.dirname(__filename);
 
-// Middleware
-app.use(cors());
-app.use(express.static(join(__dirname, 'public')));
+app.use(express.static(path.join(__dirname, 'public')));
 
-// Proxy route to fetch RSS feed
 app.get('/proxy', async (req, res) => {
-    try {
-        const response = await fetch('https://lexidugo.substack.com/feed');
-        if (!response.ok) {
-            throw new Error('Network response was not ok');
-        }
-        const data = await response.text();
-        res.header('Content-Type', 'application/rss+xml');
-        res.send(data);
-    } catch (error) {
-        console.error('Error fetching the RSS feed:', error);
-        res.status(500).send('Internal Server Error');
-    }
+  try {
+    const response = await fetch('https://lexidugo.substack.com/feed');
+    const data = await response.text();
+    res.send(data);
+  } catch (error) {
+    res.status(500).send('Error fetching the RSS feed.');
+  }
 });
 
-app.listen(PORT, () => {
-    console.log(`Server running on port ${PORT}`);
+app.get('/images/:image', async (req, res) => {
+    const imageUrl = `https://lexidugo.substack.com/p/${req.params.image}`;
+    try {
+      const response = await fetch(imageUrl);
+      if (response.ok) {
+        const buffer = await response.buffer();
+        res.set('Content-Type', response.headers.get('content-type'));
+        res.send(buffer);
+      } else {
+        console.error(`Failed to fetch image: ${response.statusText}`);
+        res.status(500).send('Error fetching the image.');
+      }
+    } catch (error) {
+      console.error('Error fetching the image:', error);
+      res.status(500).send('Error fetching the image.');
+    }
+  });
+app.listen(port, () => {
+  console.log(`Server running on port ${port}`);
 });
