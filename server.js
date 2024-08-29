@@ -22,23 +22,6 @@ app.get('/proxy', async (req, res) => {
   }
 });
 
-app.get('/images/:image', async (req, res) => {
-    const imageUrl = `https://lexidugo.substack.com/p/${req.params.image}`;
-    try {
-      const response = await fetch(imageUrl);
-      if (response.ok) {
-        const buffer = await response.buffer();
-        res.set('Content-Type', response.headers.get('content-type'));
-        res.send(buffer);
-      } else {
-        console.error(`Failed to fetch image: ${response.statusText}`);
-        res.status(500).send('Error fetching the image.');
-      }
-    } catch (error) {
-      console.error('Error fetching the image:', error);
-      res.status(500).send('Error fetching the image.');
-    }
-  });
 app.listen(port, () => {
   console.log(`Server running on port ${port}`);
 });
