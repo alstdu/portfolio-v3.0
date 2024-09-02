@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Lexi Dugo - Developer</title>
-    <link rel="icon" href="/favicon.ico" type="image/x-icon">
+    <link rel="icon" href="./favicon.ico" type="image/x-icon">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
@@ -13,6 +13,7 @@
     <link rel="stylesheet" href="./styles/reset.css">
     <link rel="stylesheet" href="./styles/index.css">
     <link rel="stylesheet" href="./styles/global.css">
+    <link rel="stylesheet" href="./styles/ticker.css">
 </head>
 <body>
     <div class="navigation-bar-container">
@@ -22,7 +23,7 @@
                 <li><a href="./index.html">Home</a></li>
                 <li><a href="">About Me</a></li>
                 <li><a href="./projects.html">Projects</a></li>
-                <li><a href="./blog.html">Blog</a></li>
+                <li><a href="https://blog.lexidugo.com">Blog</a></li>
                 <li><a class="linkedin-link" href="linkedin.com/in/lexidugo">LinkedIn</a></li>
             </ul>
         </nav>
@@ -30,7 +31,11 @@
     <main>
         <header>
             <div class="header-text">
-                <p class="welcome-tagline">Nari Jámaxaki,</p>
+                <p class="welcome-tagline">
+                    <div class="ticker">
+                        <div class="ticker-content"></div>
+                    </div>
+                </p>
                 <h1>I'm <span class="lexi-span">Lexi</span> &amp; I compose pixels with personality. </h1>
                 <p class="subtitle-text">In addition to front-end development, I enjoy D&D, matcha lattes and naps.</p>
                 <a><button class="cta-button gradient-button">Let's Chat!</button></a>
@@ -108,7 +113,7 @@
         <footer>
             <div class="top-footer-wrapper">
                 <div class="footer-logo">
-                    <img src="favicon.ico">
+                    <img src="./favicon.ico">
                 </div>
                 <div class="footer-social-icons">
                     <a href="mailto:lexi@lexidugo.com?subject=Portfolio%20Inquiry" target="_blank"><i class="fa-solid fa-envelope fa-2x"></i></a>
@@ -122,5 +127,6 @@
             </div>
         </footer>
     </main>
+    <script src="./scripts/ticker.js"></script>
 </body>
 </html>
