@@ -8,26 +8,34 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
-        rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="./styles/reset.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css" rel="stylesheet">
     <link rel="stylesheet" href="./styles/index.css">
     <link rel="stylesheet" href="./styles/global.css">
     <link rel="stylesheet" href="./styles/ticker.css">
 </head>
 <body>
-    <div class="navigation-bar-container">
-        <a href="./index.html"><img class="logo" src="./assets/logo.png" alt="lexi dugo - developer logo"></a>
-        <nav>
-            <ul>
-                <li><a href="./index.html">Home</a></li>
-                <li><a href="">About Me</a></li>
-                <li><a href="./projects.html">Projects</a></li>
-                <li><a href="https://blog.lexidugo.com">Blog</a></li>
-                <li><a class="linkedin-link" href="linkedin.com/in/lexidugo">LinkedIn</a></li>
-            </ul>
-        </nav>
-    </div>
+    <nav>
+        <div class="nav-wrapper">
+          <a href="./index.html" class="brand-logo"><img src="favicon.ico"></a>
+          <a href="#" data-target="mobile-demo" class="sidenav-trigger"><i class="material-icons">menu</i></a>
+          <ul class="right hide-on-med-and-down">
+            <li><a href="sass.html">Sass</a></li>
+            <li><a href="badges.html">Components</a></li>
+            <li><a href="collapsible.html">Javascript</a></li>
+            <li><a href="mobile.html">Mobile</a></li>
+          </ul>
+        </div>
+      </nav>
+    
+      <ul class="sidenav" id="mobile-demo">
+        <li><a href="sass.html">Sass</a></li>
+        <li><a href="badges.html">Components</a></li>
+        <li><a href="collapsible.html">Javascript</a></li>
+        <li><a href="mobile.html">Mobile</a></li>
+      </ul>
+              
     <main>
         <header>
             <div class="header-text">
@@ -109,6 +117,13 @@
                 <div class="skill-logo"><img src="./assets/godot-logo.webp" alt="godot"></div>
                 <div class="skill-logo"><p>Full list on Linkedin</p></div>
             </div>
+            <div class="carousel">
+                <a class="carousel-item" href="https://placehold.co/400"><img src="logo1.png" alt="Logo 1"></a>
+                <a class="carousel-item" href="https://placehold.co/400"><img src="logo2.png" alt="Logo 2"></a>
+                <a class="carousel-item" href="https://placehold.co/400"><img src="logo3.png" alt="Logo 3"></a>
+                <a class="carousel-item" href="https://placehold.co/400"><img src="logo4.png" alt="Logo 4"></a>
+                <a class="carousel-item" href="https://placehold.co/400"><img src="logo5.png" alt="Logo 5"></a>
+            </div>
         </section>
         <footer>
             <div class="top-footer-wrapper">
@@ -127,6 +142,9 @@
             </div>
         </footer>
     </main>
+    <script src="node_modules/jquery/dist/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+    <script src="./scripts/index.js"></script>
     <script src="./scripts/ticker.js"></script>
 </body>
 </html>

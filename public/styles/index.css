@@ -150,3 +150,17 @@ header {
     aspect-ratio: 1;
     max-width: 70px;
 }
+
+/* Set carousel to show multiple logos */
+.carousel .carousel-item {
+    width: 150px;
+    height: 150px;
+}
+  
+  /* Adjust the carousel container */
+.carousel {
+    height: 10em;
+    width: 100%;
+    overflow: hidden;
+}
+  
