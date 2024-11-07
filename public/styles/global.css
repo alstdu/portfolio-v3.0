@@ -17,14 +17,18 @@ main {
     width: 100%;
 }
 
-.navigation-bar-container>nav>ul {
+.navigation-bar-container>.nav>ul {
     display: flex;
     flex-direction: row;
     padding: 1.5em;
 }
 
-.navigation-bar-container>nav>ul>li {
+.navigation-bar-container>.nav>ul>li {
     padding: 1em;
+}
+
+.navigation-bar-container>.nav>ul>li>a {
+    color: black;
 }
 
 .linkedin-link {
@@ -57,4 +61,5 @@ footer {
 .footer-social-icons a {
     width: auto;
     margin-right: 2em;
+    color: black;
 }

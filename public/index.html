@@ -16,26 +16,18 @@
     <link rel="stylesheet" href="./styles/ticker.css">
 </head>
 <body>
-    <nav>
-        <div class="nav-wrapper">
-          <a href="./index.html" class="brand-logo"><img src="favicon.ico"></a>
-          <a href="#" data-target="mobile-demo" class="sidenav-trigger"><i class="material-icons">menu</i></a>
-          <ul class="right hide-on-med-and-down">
-            <li><a href="sass.html">Sass</a></li>
-            <li><a href="badges.html">Components</a></li>
-            <li><a href="collapsible.html">Javascript</a></li>
-            <li><a href="mobile.html">Mobile</a></li>
-          </ul>
+    <div class="navigation-bar-container">
+        <a href="./index.html"><img class="logo" src="./assets/logo.png" alt="lexi dugo - developer logo"></a>
+        <div class="nav">
+            <ul>
+                <li><a href="./index.html">Home</a></li>
+                <li><a href="">About Me</a></li>
+                <li><a href="./projects.html">Projects</a></li>
+                <li><a href="https://blog.lexidugo.com">Blog</a></li>
+                <li><a class="linkedin-link" href="linkedin.com/in/lexidugo">LinkedIn</a></li>
+            </ul>
         </div>
-      </nav>
-    
-      <ul class="sidenav" id="mobile-demo">
-        <li><a href="sass.html">Sass</a></li>
-        <li><a href="badges.html">Components</a></li>
-        <li><a href="collapsible.html">Javascript</a></li>
-        <li><a href="mobile.html">Mobile</a></li>
-      </ul>
-              
+    </div>
     <main>
         <header>
             <div class="header-text">
@@ -44,8 +36,8 @@
                         <div class="ticker-content"></div>
                     </div>
                 </p>
-                <h1>I'm <span class="lexi-span">Lexi</span> &amp; I compose pixels with personality. </h1>
-                <p class="subtitle-text">I enjoy D&D, matcha lattes and naps.</p>
+                <h1>Quality from <span class="lexi-span">Design</span> to <span class="lexi-span">Delivery</span>.</h1>
+                <p class="subtitle-text">Hi, I'm Lexi! I'm a Software Quality Assurance Engineer with UI/UX experience and a passion for creating user-friendly, accessible, and efficient software solutions.</p>
                 <a><button class="cta-button gradient-button">Let's Chat!</button></a>
             </div>
             <div class="header-testimonial">
@@ -88,41 +80,54 @@
                 </div>
                 <div class="project-card">
                     <img src="./assets/matcha-muse-cafe.png" alt="Matcha Muse Cafe">
-                    <h3 class="project-title">Matcha Muse Cafe</h3>
+                    <h3 class="project-title">SilverLock Media Internship</h3>
                     <p class="project-content">
-                        A group project involving creating a matcha cafe website from existing mockups alongside my
-                        design team.
+                        My internship as a video game QA tester in a nutshell.
                     </p>
                     <div class="project-tags">
-                        <div class="project-tag">CSS</div>
-                        <div class="project-tag">Teamwork</div>
-                        <div class="project-tag">Javascript</div>
+                        <div class="project-tag">Embedded QA</div>
+                        <div class="project-tag">Atlassian</div>
+                        <div class="project-tag">Branding</div>
                     </div>
                 </div>
             </div>
         </section>
         <section>
-            <h2 class="section-title">My Toolkit</h2>
-            <div class="skill-logos-grid">
-                <div class="skill-logo"><i class="fa-brands fa-html5 fa-5x" style="color: #f6724e;" alt="html5"></i></div>
-                <div class="skill-logo"><i class="fa-brands fa-css3-alt fa-5x" style="color: #65adff;" alt="css3"></i></div>
-                <div class="skill-logo"><i class="fa-brands fa-sass fa-5x" style="color: #CE679A" alt="sass"></i></div>
-                <div class="skill-logo"><i class="fa-brands fa-square-js fa-5x" style="color: #FFD43B;" alt="javascript"></i></div>
-                <div class="skill-logo"><i class="fa-brands fa-react fa-5x" style="color: #74C0FC;" alt="react.js"></i></div>
-                <div class="skill-logo"><img src="./assets/nodejs-logo.webp" alt="node.js"></div>
-                <div class="skill-logo"><img src="./assets/figma-logo.webp" alt="figma"></div>
-                <div class="skill-logo"><i class="fa-brands fa-atlassian fa-5x" style="color: #002f79;" alt="atlassian jira"></i></div>
-                <div class="skill-logo"><i class="fa-brands fa-square-github fa-5x" style="color: #000000;" alt="github"></i></div>
-                <div class="skill-logo"><i class="fa-brands fa-wordpress fa-5x" style="color: #268FA6;" alt="wordpress"></i></div>
-                <div class="skill-logo"><img src="./assets/godot-logo.webp" alt="godot"></div>
-                <div class="skill-logo"><p>Full list on Linkedin</p></div>
-            </div>
             <div class="carousel">
-                <a class="carousel-item" href="https://placehold.co/400"><img src="logo1.png" alt="Logo 1"></a>
-                <a class="carousel-item" href="https://placehold.co/400"><img src="logo2.png" alt="Logo 2"></a>
-                <a class="carousel-item" href="https://placehold.co/400"><img src="logo3.png" alt="Logo 3"></a>
-                <a class="carousel-item" href="https://placehold.co/400"><img src="logo4.png" alt="Logo 4"></a>
-                <a class="carousel-item" href="https://placehold.co/400"><img src="logo5.png" alt="Logo 5"></a>
+                <a class="carousel-item">
+                    <i class="fa-brands fa-css3-alt fa-5x" style="color: #65adff;" alt="css3"></i>
+                    <span>CSS/SASS/SCSS</span>
+                </a>
+                <a class="carousel-item">
+                    <i class="fa-brands fa-square-js fa-5x" style="color: #FFD43B;" alt="javascript"></i>
+                <span>Javascript/Typescript</span>
+                </a>
+                <a class="carousel-item">
+                    <i class="fa-brands fa-react fa-5x" style="color: #74C0FC;" alt="react.js"></i>
+                <span>React/React Native</span>
+                </a>
+                <a class="carousel-item">
+                    <i class="fa-brands fa-atlassian fa-5x" style="color: #002f79;" alt="atlassian jira"></i>
+                <span>Atlassian</span>
+                </a>
+                <a class="carousel-item">
+                    <div class="carousel-content">
+                        <img src="./assets/figma-logo.webp" alt="figma">
+                        <span>Figma</span>
+                    </div>
+                </a>
+                <a class="carousel-item">
+                    <div class="carousel-content">
+                        <img src="./assets/materialize-logo.webp" alt="materialize css">
+                        <span>Materialize CSS</span>
+                    </div>
+                </a>
+                <a class="carousel-item">
+                    <div class="carousel-content">
+                        <img src="./assets/nodejs-logo.webp" alt="node.js">
+                        <span>Angular</span>
+                    </div>
+                </a>
             </div>
         </section>
         <footer>
@@ -142,7 +147,7 @@
             </div>
         </footer>
     </main>
-    <script src="node_modules/jquery/dist/jquery.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
     <script src="./scripts/index.js"></script>
     <script src="./scripts/ticker.js"></script>
