@@ -64,7 +64,6 @@ header {
     align-items: flex-end;
     justify-content: flex-end;
     flex: 1;
-    margin-right: -4em;
 }
 
 .header-testimonial > img {
@@ -112,6 +111,7 @@ header {
     display: flex;
     justify-content: space-between;
     gap: 1rem;
+    flex-wrap: wrap;
 }
 
 .project-card {

@@ -1,0 +1,130 @@
+.about-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 2em 0;
+}
+
+.about-hero {
+    display: flex;
+    align-items: center;
+    gap: 4em;
+    margin-bottom: 4em;
+}
+
+.about-text {
+    flex: 1;
+}
+
+.about-text h1 {
+    font-size: 4rem;
+    font-weight: 700;
+    margin-bottom: 0.5em;
+}
+
+.accent {
+    color: #CB67FF;
+}
+
+.intro-text {
+    font-size: 1.2rem;
+    line-height: 1.6;
+    margin-bottom: 2em;
+}
+
+.about-image {
+    flex: 1;
+}
+
+.about-image img {
+    border-radius: 15px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+}
+
+.journey-section, .interests-section {
+    margin: 4em 0;
+}
+
+h2 {
+    font-size: 2.5rem;
+    font-weight: 700;
+    margin-bottom: 1em;
+}
+
+.timeline {
+    position: relative;
+    padding: 2em 0;
+}
+
+.timeline::before {
+    content: '';
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 2px;
+    height: 100%;
+    background: linear-gradient(to bottom, #74C0FC, #CB67FF);
+}
+
+.timeline-item {
+    margin: 2em 0;
+    width: 100%;
+    position: relative;
+}
+
+.timeline-content {
+    width: 45%;
+    background: white;
+    padding: 1.5em;
+    border-radius: 10px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+    position: relative;
+    margin-bottom: 2em;
+}
+
+.timeline-content:nth-child(odd) {
+    margin-left: auto;
+    margin-right: 55%;
+}
+
+.timeline-content:nth-child(even) {
+    margin-left: 55%;
+}
+
+.timeline-content::before {
+    content: '';
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    background: white;
+    border-radius: 50%;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.timeline-content:nth-child(odd)::before {
+    right: -60px;
+}
+
+.timeline-content:nth-child(even)::before {
+    left: -60px;
+}
+
+.interests-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 2em;
+}
+
+.interest-card {
+    background: white;
+    padding: 2em;
+    border-radius: 10px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+    text-align: center;
+}
+
+.interest-card i {
+    font-size: 2.5rem;
+    color: #CB67FF;
+    margin-bottom: 1em;
+}
