@@ -153,18 +153,18 @@ header {
 
 /* SKILLS SECTION */
 
-.skill-logos-grid {
+/* .skill-logos-grid {
     display: grid;
-    grid-template-columns: repeat(4, 1fr); /* 4 columns of equal width */
-    grid-template-rows: repeat(4, auto); /* 4 rows of auto height */
-    gap: 1rem; /* Space between the grid items */
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(4, auto);
+    gap: 1rem;
     padding: 1rem;
 }
 
 .skill-logo {
     aspect-ratio: 1;
-    max-width: 70px;
-}
+    max-width: 100px;
+} */
 
 .carousel {
     height: 10em;
@@ -178,8 +178,8 @@ header {
     align-items: center;
     flex-direction: column;
     text-align: center;
-    width: 150px;
-    height: 150px;
+    width: 200px;
+    height: 200px;
 }
 
 .carousel-content {
