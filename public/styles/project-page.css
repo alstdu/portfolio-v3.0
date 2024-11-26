@@ -21,6 +21,7 @@
     align-items: center;
     gap: 2rem;
     margin-top: 1.5rem;
+    flex-wrap: wrap;
 }
 
 .project-date {
@@ -41,10 +42,12 @@
 
 .project-hero-image {
     width: 100%;
+    max-width: 700px;
     height: auto;
     border-radius: 15px;
-    margin-bottom: 3rem;
+    margin: 0 auto 3rem;
     box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+    display: block;
 }
 
 .project-details h2 {
@@ -76,6 +79,8 @@
     margin-top: 4rem;
     padding-top: 2rem;
     border-top: 1px solid #eee;
+    flex-wrap: wrap;
+    gap: 1rem;
 }
 
 .project-navigation a {
@@ -86,4 +91,44 @@
 
 .project-navigation a:hover {
     color: #bb3eff;
+}
+
+@media (max-width: 768px) {
+    .project-header h1 {
+        font-size: 2.5rem;
+        text-align: center;
+    }
+    
+    .project-details h2 {
+        font-size: 2rem;
+        text-align: center;
+    }
+    
+    .project-page {
+        padding: 1rem;
+        text-align: center;
+    }
+
+    .project-meta {
+        justify-content: center;
+    }
+
+    .project-links {
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        gap: 1.5rem;
+    }
+
+    .project-links a {
+        margin-right: 0;  /* Remove margin since we're using gap */
+    }
+
+    .tech-stack, .features-list {
+        justify-content: center;
+    }
+
+    .tech-stack li, .features-list li {
+        text-align: center;
+    }
 } 
