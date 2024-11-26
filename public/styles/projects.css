@@ -80,3 +80,18 @@ main {
 .portfolio-section {
     flex: 1;
 }
+
+.project-link {
+    display: inline-block;
+    padding: 10px 20px;
+    margin-top: 15px;
+    background-color: #CB67FF;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.project-link:hover {
+    background-color: #bb3eff; 
+}
