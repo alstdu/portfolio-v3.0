@@ -161,6 +161,7 @@ header {
     height: 10em;
     width: 100%;
     overflow: hidden;
+    margin-top: 4rem;
 }
   
 .carousel-item {
@@ -189,14 +190,13 @@ header {
     font-size: 1.2rem;
 }
 
-/* Add media query for smaller screens */
 @media (max-width: 768px) {
     header {
-        gap: 2em; /* Reduce gap on mobile */
+        gap: 2em;
     }
 
     .header-text {
-        width: 100%; /* Take full width on mobile */
+        width: 100%;
     }
 
     .header-testimonial {
@@ -205,7 +205,7 @@ header {
     }
 
     .header-testimonial > img {
-        max-width: 100%; /* Make image responsive */
+        max-width: 100%;
     }
 
     .testimonial-block {
@@ -216,4 +216,19 @@ header {
         width: 90%; /* Make testimonial block responsive */
         max-width: 400px;
     }
+}
+
+.btn-large.cta-button {
+    font-weight: bold;
+    padding: 0 2em;
+    height: 40px;
+    line-height: 40px;
+    border-radius: 30px;
+    color: white;
+    background-color: #CB67FF;
+    box-shadow: none;
+}
+
+.btn-large.cta-button:hover {
+    background-color: #bb3eff;
 }
