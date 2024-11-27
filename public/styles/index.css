@@ -37,7 +37,7 @@ header {
 
 .cta-button {
     font-weight: bold;
-    padding: .5em 2em;
+    /* padding: .5em 2em; */
     border-radius: 30px;
     color: white;
     background-color: #CB67FF;
@@ -49,10 +49,6 @@ header {
     background-size: 200% 100%;
     /* Initial background position */
     background-position: 0% 0%;
-    color: white;
-    padding: .5em 1.2em;
-    border-radius: 30px;
-    font-size: 1rem;
     cursor: pointer;
     transition: background-position 0.3s ease;
 }
