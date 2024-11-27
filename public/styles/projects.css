@@ -1,17 +1,78 @@
 .portfolio-container {
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: 25% 75%;
+    grid-template-rows: auto auto;
     gap: 20px;
     max-width: 1200px;
     margin: 0 auto;
     margin-bottom: 4em;
 }
 
-/* Project Card Base Styles */
-.featured-project {
-    grid-column: span 3;
+.portfolio-title {
+    padding: 20px;
 }
 
+.portfolio-title h1 {
+    font-size: 4rem;
+    font-weight: 700;
+    margin-bottom: 0.5em;
+}
+
+.portfolio-title p {
+    font-size: 1.2rem;
+    line-height: 1.6;
+    color: #666;
+}
+
+.featured-project {
+    grid-column: 2;
+}
+
+.project-card {
+    grid-column: span 1;
+}
+
+@media (min-width: 769px) {
+    .portfolio-container {
+        display: grid;
+        grid-template-columns: 25% 75%;
+        grid-template-areas: 
+            "title featured"
+            "cards cards";
+        gap: 20px;
+    }
+    
+    .portfolio-title {
+        grid-area: title;
+    }
+    
+    .featured-project {
+        grid-area: featured;
+    }
+    
+    .projects-grid {
+        grid-area: cards;
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 20px;
+    }
+}
+
+@media (max-width: 768px) {
+    .portfolio-container {
+        grid-template-columns: 1fr;
+        grid-template-areas: 
+            "title"
+            "featured"
+            "cards";
+    }
+    
+    .projects-grid {
+        grid-template-columns: 1fr;
+    }
+}
+
+/* Project Card Base Styles */
 .featured-project-inner,
 .project-card-inner {
     background-color: #ffffff;
@@ -100,4 +161,9 @@ main {
 
 .project-link:hover {
     background-color: #bb3eff; 
+}
+
+/* Add the accent class if you want to highlight part of the title */
+.accent {
+    color: #CB67FF;
 }
