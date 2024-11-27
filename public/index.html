@@ -14,11 +14,15 @@
     <link rel="stylesheet" href="./styles/index.css">
     <link rel="stylesheet" href="./styles/global.css">
     <link rel="stylesheet" href="./styles/ticker.css">
+    <link rel="icon" href="./favicon.ico" type="image/x-icon">
 </head>
 <body>
     <div class="navigation-bar-container">
         <a href="./index.html"><img class="logo" src="./assets/logo.png" alt="lexi dugo - developer logo"></a>
-        <div class="nav">
+        <button class="menu-toggle" aria-expanded="false" aria-controls="mobile-nav">
+            <span class="menu-icon"></span>
+        </button>
+        <div class="nav" id="mobile-nav">
             <ul>
                 <li><a href="./index.html">Home</a></li>
                 <li><a href="./about.html">About Me</a></li>
@@ -61,7 +65,7 @@
                     </p>
                     <div class="project-tags">
                         <div class="project-tag">SQLite</div>
-                        <div class="project-tag">AngularJS</div>
+                        <div class="project-tag">Angular</div>
                         <div class="project-tag">Node.js</div>
                     </div>
                 </div>
@@ -125,7 +129,7 @@
                 <a class="carousel-item">
                     <div class="carousel-content">
                         <img src="./assets/angular-logo.webp" alt="angular">
-                        <span>AngularJS</span>
+                        <span>Angular</span>
                     </div>
                 </a>
             </div>
@@ -151,5 +155,6 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
     <script src="./scripts/index.js"></script>
     <script src="./scripts/ticker.js"></script>
+    <script src="./scripts/nav.js"></script>
 </body>
 </html>
