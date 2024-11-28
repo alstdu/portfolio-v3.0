@@ -44,6 +44,12 @@
     margin: 4em 0;
 }
 
+.journey-section h2 {
+    font-size: 2.5rem;
+    font-weight: 700;
+    margin-bottom: 1em;
+}
+
 h2 {
     font-size: 2.5rem;
     font-weight: 700;
@@ -109,6 +115,23 @@ h2 {
     left: -60px;
 }
 
+.timeline-content h3 {
+    font-size: 1.5rem;
+    font-weight: 600;
+    margin-bottom: 0.5em;
+}
+
+.timeline-content h4 {
+    font-size: 1.2rem;
+    font-weight: 500;
+    margin-bottom: 0.5em;
+}
+
+.timeline-content p {
+    font-size: 1rem;
+    line-height: 1.5;
+}
+
 .interests-grid {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
@@ -127,4 +150,21 @@ h2 {
     font-size: 2.5rem;
     color: #CB67FF;
     margin-bottom: 1em;
+}
+
+.interests-section h2 {
+    font-size: 2.5rem;
+    font-weight: 700;
+    margin-bottom: 1em;
+}
+
+.interest-card h3 {
+    font-size: 1.5rem;
+    font-weight: 600;
+    margin-bottom: 0.5em;
+}
+
+.interest-card p {
+    font-size: 1rem;
+    line-height: 1.5;
 }
