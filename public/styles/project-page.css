@@ -50,12 +50,6 @@
     display: block;
 }
 
-.project-details h2 {
-    font-size: 2.5rem;
-    font-weight: 700;
-    margin: 2rem 0 1rem;
-}
-
 .tech-stack, .features-list {
     list-style: none;
     padding: 0;
@@ -98,11 +92,6 @@
 @media (max-width: 768px) {
     .project-header h1 {
         font-size: 2.5rem;
-        text-align: center;
-    }
-    
-    .project-details h2 {
-        font-size: 2rem;
         text-align: center;
     }
     
