@@ -160,3 +160,27 @@
 .interest-card {
     text-align: center;
 }
+
+.timeline-content {
+    opacity: 0;
+    transform: translateX(-50px);
+    transition: all 0.5s ease;
+}
+
+.timeline-content::before {
+    transform: translateY(-50%) scale(0);
+    transition: transform 0.3s ease;
+}
+
+.timeline-content:nth-child(even) {
+    transform: translateX(50px);
+}
+
+.timeline-content.visible {
+    opacity: 1;
+    transform: translateX(0);
+}
+
+.timeline-content.visible::before {
+    transform: translateY(-50%) scale(1);
+}
