@@ -14,6 +14,7 @@
     <link href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css" rel="stylesheet">
     <link rel="icon" href="../favicon.ico" type="image/x-icon">
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/prism/1.24.1/themes/prism.min.css" rel="stylesheet" />
 </head>
 <body>
     <div class="navigation-bar-container">
@@ -44,38 +45,247 @@
             </div>
         </header>
 
-        <section class="project-overview">
-            <img src="../assets/dndtools-preview.webp" alt="D&D Tools Preview" class="project-hero-image">
-            
-            <div class="project-details">
-                <h2>Overview</h2>
-                <p>Detailed description of your D&D Tools project...</p>
-
-                <h2>Technologies Used</h2>
-                <ul class="tech-stack">
-                    <li>JavaScript</li>
-                    <li>APIs</li>
-                    <li>React</li>
-                    <li>JSON</li>
-                    <li>CSS Animations</li>
-                    <li>Webpack</li>
-                    <li>JS Plugins</li>
-                </ul>
-
-                <h2>Key Features</h2>
-                <ul class="features-list">
-                    <li>Spells Table</li>
-                    <li>Point Buy Calculator</li>
-                    <li>3D Dice Roller</li>
-                </ul>
-
-                <h2>Development Process</h2>
-                <p>Description of how you built it, challenges faced, and solutions...</p>
-
-                <h2>Lessons Learned</h2>
-                <p>What you learned from this project...</p>
+        <div class="content-wrapper">
+            <div class="tech-stack-grid">
+                <div class="bento-item tech-logo" data-expand="javascript-expanded">
+                    <img src="../assets/javascript-logo.webp" alt="JavaScript">
+                    <p>JavaScript</p>
+                </div>
+                <div class="bento-item tech-logo" data-expand="html-expanded">
+                    <img src="../assets/html-logo.png" alt="HTML">
+                    <p>HTML</p>
+                </div>
+                <div class="bento-item tech-logo" data-expand="css-expanded">
+                    <img src="../assets/css-logo.webp" alt="CSS">
+                    <p>CSS</p>
+                </div>
+                <div class="bento-item tech-logo" data-expand="dnd-api-expanded">
+                    <img src="../assets/dnd-api-logo.png" alt="D&D API">
+                    <p>D&D API</p>
+                </div>
+                <div class="bento-item tech-logo" data-expand="plugins-expanded">
+                    <p>JS Plugins</p>
+                </div>
+                <div class="bento-item tech-logo" data-expand="webpack-expanded">
+                    <img src="../assets/webpack-logo.png" alt="Webpack">
+                    <p>Webpack</p>
+                </div>
             </div>
-        </section>
+
+            <div class="bento-grid">
+                <div class="bento-item" data-expand="planning-expanded">
+                    <h3>Project Overview</h3>
+                </div>
+
+                <div class="bento-item hero-image">
+                    <img src="../assets/dndtools-preview.webp" alt="D&D Tools Preview">
+                </div>
+
+                <div class="bento-item" data-expand="challenges-expanded">
+                    <h3>Technical Challenges</h3>
+                </div>
+
+                <div class="bento-item" data-expand="solutions-expanded">
+                    <h3>Solutions Implemented</h3>
+                    <p>Custom caching system ...</p>
+                </div>
+
+                <div class="bento-item large" data-expand="milestones-expanded">
+                    <h3>Key Milestones</h3>
+                    <div class="achievement">API Integration Complete</div>
+                    <div class="achievement">Core Features Implemented ...</div>
+                </div>
+
+                <div class="bento-item" data-expand="feedback-expanded">
+                    <h3>User Feedback</h3>
+                    <p>"Use this every time I forget my dice at home!" ...</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="overlay"></div>
+
+        <div class="expanded-content" id="javascript-expanded">
+            <button class="close-btn">&times;</button>
+            <h2>JavaScript</h2>
+            <p>Core language used for interactive features and DOM manipulation.</p>
+            <h3>Key Features Used</h3>
+            <ul>
+                <li>Event Handling</li>
+                <li>API Integration</li>
+                <li>Dynamic Content</li>
+            </ul>
+        </div>
+
+        <div class="expanded-content" id="planning-expanded">
+            <button class="close-btn">&times;</button>
+            <h2>Project Overview</h2>
+            <blockquote>A collection of D&D tools including a spells table, 
+                a point buy calculator and a 3D dice roller. Created using HTML, CSS, JS & packaged with Webpack.</blockquote>
+                <br>
+                <div class="achievement">
+                    <span>🎯</span>
+                    Project Topic Chosen
+                </div>
+        </div>
+
+        <div class="expanded-content" id="html-expanded">
+            <button class="close-btn">&times;</button>
+            <h2>HTML</h2>
+            <p>Semantic markup providing the foundation for the application structure.</p>
+            <h3>Key Features</h3>
+            <ul>
+                <li>Semantic Elements</li>
+                <li>Accessible Table Design and Expanding Sections</li>
+                <li>Responsive Design Structure</li>
+            </ul>
+        </div>
+
+        <div class="expanded-content" id="css-expanded">
+            <button class="close-btn">&times;</button>
+            <h2>CSS</h2>
+            <p>Modern styling techniques for an engaging user interface.</p>
+            <h3>Styling Features</h3>
+            <ul>
+                <li>Flexbox & Grid Layouts</li>
+                <li>Custom Animations</li>
+                <li>Responsive Design</li>
+                <li>CSS Variables</li>
+            </ul>
+        </div>
+
+        <div class="expanded-content" id="dnd-api-expanded">
+            <button class="close-btn">&times;</button>
+            <h2>D&D 5e API Integration</h2>
+            <p>Leveraging the D&D 5e API for comprehensive spell data.</p>
+            <h3>API Features</h3>
+            <ul>
+                <li>Spell Titles</li>
+                <li>Spell Descriptions</li>
+                <li>Spell Components</li>
+                <li>Spell Duration</li>
+                <li>Spell Range</li>
+                <li>Spell School</li>
+            </ul>
+            <p>This API provides detailed information about spells, including their titles, descriptions, components, duration, range, and school.</p>
+            <pre><code class="language-javascript">
+const getJsonFromUrl = async ( url ) => {
+    const response = await fetch( url );
+    const parsed = await response.json();
+    return parsed;
+};
+
+const getSpellsList = async () => {
+    return ( await getJsonFromUrl( `${API_BASE}/api/spells` ) ).results;
+};
+
+const getSpellFromUrl = async ( spellPath ) => {
+    return await getJsonFromUrl( `${API_BASE}${spellPath}` );
+};</code></pre>
+        <p>This code snippet demonstrates how to fetch spell data from the D&D 5e API using JavaScript. 
+            It includes functions to retrieve a list of spells and a specific spell by its path.</p>
+        <br>
+        <p>We then needed to create our dom elements and populate them with the data from the api.</p>
+         <pre><code class="language-javascript">
+// here is an example of how we populated the dom with the spell data.
+const levelElm = document.createElement( 'p' );
+const levelSpanElm = document.createElement( 'span' );
+levelSpanElm.style.fontWeight = 'bold';
+levelSpanElm.innerText = 'Level: ';
+levelElm.appendChild( levelSpanElm );
+// if level is greater than 0, display the level. Else cantrip
+levelElm.innerHTML += spell.level > 0 ? spell.level : 'Cantrip';
+detailElm.appendChild( levelElm );
+            </code></pre>   
+        </div>
+
+        <div class="expanded-content" id="plugins-expanded">
+            <button class="close-btn">&times;</button>
+            <h2>JavaScript Plugins</h2>
+            <p>Carefully selected plugins to enhance functionality.</p>
+            <h3>Implemented Plugins</h3>
+            <ul>
+                <li>List.js</li>
+                <li>Granim.js</li>
+                <li>3D Dice Roller</li>
+                <li>Overlay Scrollbars</li>
+            </ul>
+        </div>
+
+        <div class="expanded-content" id="webpack-expanded">
+            <button class="close-btn">&times;</button>
+            <h2>Webpack</h2>
+            <p>Modern build tooling for optimal performance.</p>
+            <h3>Build Features</h3>
+            <ul>
+                <li>Asset Bundling</li>
+                <li>Dependency Management</li>
+                <li>Development Environment</li>
+                <li>Production Optimization</li>
+            </ul>
+        </div>
+
+        <div class="expanded-content" id="challenges-expanded">
+            <button class="close-btn">&times;</button>
+            <h2>Technical Challenges</h2>
+            <p>Overcoming complex technical hurdles during development.</p>
+            <h3>Key Challenges</h3>
+            <ul>
+                <li>Complex Data Relationships</li>
+                <li>API Rate Limiting</li>
+                <li>State Management</li>
+                <li>Performance Optimization</li>
+            </ul>
+        </div>
+
+        <div class="expanded-content" id="solutions-expanded">
+            <button class="close-btn">&times;</button>
+            <h2>Solutions Implemented</h2>
+            <p>Innovative solutions to technical challenges.</p>
+            <h3>Key Solutions</h3>
+            <ul>
+                <li>Custom Caching System</li>
+                <li>Optimized Data Structures</li>
+                <li>Progressive Loading</li>
+                <li>Offline Functionality</li>
+            </ul>
+        </div>
+
+        <div class="expanded-content" id="milestones-expanded">
+            <button class="close-btn">&times;</button>
+            <h2>Key Milestones</h2>
+            <div class="achievement">API Integration Complete</div>
+            <div class="achievement">Core Features Implemented</div>
+            <div class="achievement">Responsive Design Complete</div>
+            <div class="achievement">Testing Successful</div>
+            <div class="achievement">Load Time Optimized</div>
+            <h3>Timeline</h3>
+            <ul>
+                <li>Project Initiation: Early November 2023</li>
+                <li>Development Phase: November 2023 - December 2023</li>
+                <li>Testing: Mid December 2023</li>
+                <li>Launch: Late December 2023</li>
+                <li>Improvements: January 2024 - Present</li>
+            </ul>
+        </div>
+
+        <div class="expanded-content" id="feedback-expanded">
+            <button class="close-btn">&times;</button>
+            <h2>User Feedback</h2>
+            <p>Valuable insights from our user community.</p>
+            <h3>Key Feedback</h3>
+            <blockquote>"Use this every time I forget my dice at home!"</blockquote>
+            <blockquote>"Love the quick access to spell information."</blockquote>
+            <blockquote>"I showed this to my friends and they use it during our games!"</blockquote>
+            <h3>Improvements Made Since Launch</h3>
+            <ul>
+                <li>Enabled dice total display: <b>Jan 4, 2024</b></li>
+                <li>Added d12: <b>Jan 11, 2024</b></li>
+                <li>Improved load times by loading spells in chunks: <b>Dec 3, 2024</b></li>
+                <li>You can now roll multiple dice of different kinds at once: <b>Dec 3, 2024</b></li>
+                <li>Improved dice select and roll UI: <b>Dec 3, 2024</b></li>
+            </ul>
+        </div>
 
         <nav class="project-navigation">
             <a href="silverlock-media.html" class="waves-effect waves-light btn">
@@ -106,5 +316,7 @@
         </footer>
     </main>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+    <script src="../scripts/project-pages.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.24.1/prism.min.js"></script>
 </body>
 </html> 
