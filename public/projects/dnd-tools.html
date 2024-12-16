@@ -84,6 +84,7 @@
 
                 <div class="bento-item" data-expand="challenges-expanded">
                     <h3>Solving Challenges</h3>
+                    <p>At the beginning, I wasn't even sure what a JavaScript plugin was!</p>
                 </div>
 
                 <div class="bento-item" data-expand="solutions-expanded">
@@ -174,7 +175,7 @@
                 <li>Spell Range</li>
                 <li>Spell School</li>
             </ul>
-            <p>This API provides detailed information about spells, including their titles, descriptions, components, duration, range, and school.</p>
+            <br>
             <pre><code class="language-javascript">
 const getJsonFromUrl = async ( url ) => {
     const response = await fetch( url );
@@ -227,7 +228,6 @@ detailElm.appendChild( levelElm );
             <ul>
                 <li>Asset Bundling</li>
                 <li>Dependency Management</li>
-                <li>Development Environment</li>
                 <li>Production Optimization</li>
             </ul>
         </div>
@@ -236,19 +236,33 @@ detailElm.appendChild( levelElm );
             <button class="close-btn">&times;</button>
             <h2>Challenges</h2>
             <p>Overcoming complex technical hurdles during development.</p>
-            <ul>
-                <li>Complex Data Relationships</li>
-                <li>API Rate Limiting</li>
-                <li>State Management</li>
-                <li>Performance Optimization</li>
-            </ul>
-            <h2>Solutions</h2>
-            <ul>
-                <li>Custom Caching System</li>
-                <li>Optimized Data Structures</li>
-                <li>Progressive Loading</li>
-                <li>Offline Functionality</li>
-            </ul>
+            <h3>Performance</h3>
+            <p>One of the biggest challenges was performance when loading the spells. 
+                It would take around 10 seconds to load the spells since we were loading all the spells at once.</p>
+            <p>To fix this, I created a custom caching system and implemented a progressive loading system. 
+                This way, the page would load faster and the user would be able to start using the tools sooner.</p>
+            <div class="achievement">
+                <span>🎯</span>
+                Loading Time Optimized
+            </div>
+            <h3>Spell Information</h3>
+            <p>The problem I faced was choosing how the spell information would display on smaller screens.
+                I couldn't fit everything on the table at smaller screen sizes, so I added a transition that 
+                drops less important information when the screen is small, and puts that information in the expanded section for that spell.
+            </p>
+            <div class="achievement">
+                <span>🎯</span>
+                Mobile Responsive Spell Information
+            </div>
+            <h3>Plugin Integration</h3>
+            <p>At the start of this project, I was still learning how to use plugins. I quickly noticed that 
+                some plugins were easier to implement than others - whether that was from a lack of documentation or just 
+                a matter of how complex the plugin was. However, I learned a lot from the process and I'm glad I took the time to learn.
+            </p>
+            <div class="achievement">
+                <span>🎯</span>
+                Learned How to Use Plugins
+            </div>
         </div>
 
         <div class="expanded-content" id="solutions-expanded">
@@ -329,7 +343,7 @@ detailElm.appendChild( levelElm );
         </footer>
     </main>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
-    <script src="../scripts/project-pages.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.24.1/prism.min.js"></script>
+    <script src="../scripts/project-pages.js"></script>
 </body>
 </html> 

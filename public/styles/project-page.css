@@ -1,3 +1,7 @@
+p {
+    margin: 1rem 0;
+}
+
 .project-page {
     max-width: 1200px;
     margin: 0 auto;
