@@ -1,0 +1,349 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>D&D Character Sheets - Lexi Dugo</title>
+    <link rel="stylesheet" href="../styles/reset.css">
+    <link rel="stylesheet" href="../styles/global.css">
+    <link rel="stylesheet" href="../styles/project-page.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css" rel="stylesheet">
+    <link rel="icon" href="../favicon.ico" type="image/x-icon">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/prism/1.24.1/themes/prism.min.css" rel="stylesheet" />
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/prism/1.24.1/plugins/line-numbers/prism-line-numbers.min.css" rel="stylesheet" />
+</head>
+<body>
+    <div class="navigation-bar-container">
+        <a href="../index.html"><img class="logo" src="../assets/logo.webp" alt="lexi dugo - developer logo"></a>
+        <div class="nav">
+            <ul>
+                <li><a href="../index.html">Home</a></li>
+                <li><a href="../about.html">About Me</a></li>
+                <li><a href="../projects.html">Projects</a></li>
+                <li><a href="https://blog.lexidugo.com">Blog</a></li>
+                <li><a class="linkedin-link" href="https://linkedin.com/in/lexidugo" target="_blank">LinkedIn</a></li>
+            </ul>
+        </div>
+    </div>
+    <main class="project-page">
+        <header class="project-header">
+            <h1>D&D Character Sheets</h1>
+            <div class="project-meta">
+                <span class="project-date">Started: November 2024 (still in development)</span>
+                <div class="project-links">
+                    <a href="https://github.com/alstdu/dnd-character-tracker" target="_blank" class="github-link">
+                        <i class="fab fa-github"></i> View Code
+                    </a>
+                </div>
+            </div>
+        </header>
+
+        <div class="content-wrapper">
+            <div class="tech-stack-grid">
+                <div class="bento-item tech-logo" data-expand="typescript-expanded">
+                    <img src="../assets/typescript-logo.webp" alt="TypeScript">
+                    <p>TypeScript</p>
+                </div>
+                <div class="bento-item tech-logo" data-expand="angular-expanded">
+                    <img src="../assets/angular-logo.webp" alt="Angular">
+                    <p>Angular</p>
+                </div>
+                <div class="bento-item tech-logo" data-expand="sass-expanded">
+                    <img src="../assets/sass-logo.webp" alt="SASS">
+                    <p>SASS</p>
+                </div>
+                <div class="bento-item tech-logo" data-expand="cypress-expanded">
+                    <p>Cypress & Jasmine</p>
+                </div>
+                <div class="bento-item tech-logo" data-expand="sqlite-expanded">
+                    <img src="../assets/sqlite-logo.webp" alt="SQLite">
+                    <p>SQLite</p>
+                </div>
+                <div class="bento-item tech-logo" data-expand="express-expanded">
+                    <img src="../assets/express-logo.webp" alt="Express">
+                    <p>Express</p>
+                </div>
+            </div>
+
+            <div class="bento-grid">
+                <div class="bento-item" data-expand="overview">
+                    <h3>Project Overview</h3>
+                    <p>What problem does this project solve?</p>
+                </div>
+
+                <div class="bento-item hero-image">
+                    <img src="../assets/dndcharsheet-preview.webp" alt="D&D Tools Preview">
+                </div>
+
+                <div class="bento-item" data-expand="challenges">
+                    <h3>Solving Challenges</h3>
+                </div>
+
+                <div class="bento-item" data-expand="key-milestones">
+                    <h3>Key Milestones</h3>
+                </div>
+
+
+                <div class="bento-item large" data-expand="project-timeline">
+                    <h3>Project Timeline</h3>
+                    <div class="achievement">API Integration Complete</div>
+                    <div class="achievement">Core Features Implemented ...</div>
+                </div>
+
+                <div class="bento-item" data-expand="quality-assurance">
+                    <h3>Quality Assurance</h3>
+                    <p>Argueably the most important part of the project.</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="overlay"></div>
+
+        <div class="expanded-content" id="typescript-expanded">
+            <button class="close-btn">&times;</button>
+            <h2>TypeScript</h2>
+            <p>Why TypeScript?</p>
+            <ul>
+                <li>Provides type safety for complex character attributes and calculations</li>
+                <li>Makes refactoring safer when modifying character mechanics</li>
+            </ul>
+            <pre><code class="language-typescript">
+readonly skills: Skill[] = [
+    { name: 'Athletics', ability: 'STR', key: 'athletics' },
+    // Type checking ensures all skills have required properties
+]</code></pre>
+        </div>
+
+        <div class="expanded-content" id="overview">
+            <button class="close-btn">&times;</button>
+            <h2>Project Overview</h2>
+            <blockquote>The D&D Character Tracker is a web application designed to solve the common problem of 
+                managing Dungeons & Dragons character sheets digitally. It addresses several pain points:</blockquote>
+                <ul>
+                    <li>Eliminates paper character sheets that can be lost or damaged</li>
+                    <li>Automates complex calculations (HP management, ability modifiers)</li>
+                    <li>Provides real-time tracking of character stats, inventory, and equipment</li>
+                    <li>Supports special game mechanics like temporary HP and Aid spells</li>
+                </ul>
+        </div>
+
+        <div class="expanded-content" id="angular-expanded">
+            <button class="close-btn">&times;</button>
+            <h2>Angular (v18.2)</h2>
+            <p>Why Angular?</p>
+            <ul>
+                <li>Built-in dependency injection system ideal for managing character services and state</li>
+                <li>Component-based architecture matches well with D&D's modular character elements (abilities, skills, inventory, etc.)</li>
+            </ul>
+            <p>Why not React?</p>
+            <ul>
+                <li>While popular, it lacks Angular's built-in structure and type safety; plus, I had already used React in a few previous projects and wanted to learn something new</li>
+            </ul>
+        </div>
+
+        <div class="expanded-content" id="sass-expanded">
+            <button class="close-btn">&times;</button>
+            <h2>SASS</h2>
+            <p>Why SASS?</p>
+            <ul>
+                <li>...Why <i>not</i> SASS?</li>
+                <li>Nested selectors</li>
+                <li>Variables and mixins help maintain consistent theme across components</li>
+                <li>Better organization of styles</li>
+                <li>Faster development time</li>
+            </ul>
+        </div>
+
+        <div class="expanded-content" id="cypress-expanded">
+            <button class="close-btn">&times;</button>
+            <h2>Cypress & Jasmine</h2>
+            <p>Why Cypress?</p>
+            <ul>
+                <li>Automated testing for UI components in a browser environment</li>
+                <li>Ensures consistent behavior across different browsers and devices</li>
+                <li>Visual testing tools for character sheet layout</li>
+            </ul>
+            <p>Why Jasmine?</p>
+            <ul>
+                <li>Angular integration for testing services and components</li>
+                <li>Built-in assertion library perfect for testing character calculations</li>
+                <li>Easy to understand syntax</li>
+            </ul>
+            <pre><code class="language-javascript">
+describe('applyDamage', () => {
+    it('should reduce current HP by damage amount', () => {
+        service.applyDamage(mockCharacter, 10);
+        expect(mockCharacter.currentHp).toBe(35);
+    });</code></pre>
+        </div>
+
+        <div class="expanded-content" id="sqlite-expanded">
+            <button class="close-btn">&times;</button>
+            <h2>SQLite</h2>
+            <p>Why SQLite?</p>
+            <ul>
+                <li>Serverless database perfect for small to medium applications</li>
+                <li>Simple backup and version control of character data</li>
+                <li>ACID compliance ensures character data integrity</li>
+                <li>Efficient for the relational nature of D&D character data</li>
+            </ul>
+        </div>
+
+        <div class="expanded-content" id="express-expanded">
+            <button class="close-btn">&times;</button>
+            <h2>Express</h2>
+            <p>Why Express?</p>
+            <ul>
+                <li>JavaScript/TypeScript consistency across full stack</li>
+                <li>Efficient handling of concurrent character updates</li>
+                <li>Lightweight and fast server framework</li>
+            </ul>
+        </div>
+
+        <div class="expanded-content" id="challenges">
+            <button class="close-btn">&times;</button>
+            <h2>Challenges</h2>
+            <p>Overcoming complex technical hurdles during development.</p>
+            <h3>Data Management</h3>
+            <p>Originally, I wasn't going to add a database to the project. I was initially using local storage and JSON to store the character data.</p>
+            <p>However, I quickly realized that this was a bad idea as it would be difficult to manage the data and it would be lost if the user cleared their cache.</p>
+            <p>To fix this, I added a SQLite database to the project. This allowed for dynamic data storage and retrieval.</p>
+            <div class="achievement">
+                <span>🎯</span>
+                SQLite Database Added
+            </div>
+            <h3>Data Normalization and Relationships</h3>
+            <p>SQLite is a relational database, so I had to normalize the data and create relationships between the tables.
+                The challenge was managing complex relationships between characters, items, proficiencies, and skills.
+            </p>
+            <pre><code class="language-sql">
+CREATE TABLE IF NOT EXISTS characters (
+    id INTEGER PRIMARY KEY AUTOINCREMENT,
+    name TEXT NOT NULL,
+    current_hp INTEGER NOT NULL,
+    base_max_hp INTEGER NOT NULL
+);
+
+CREATE TABLE IF NOT EXISTS character_saving_throws (
+    character_id INTEGER NOT NULL,
+    ability TEXT NOT NULL,
+    is_proficient BOOLEAN NOT NULL DEFAULT FALSE,
+    PRIMARY KEY (character_id, ability)
+);</code></pre>
+            <h3>Cross-Component Communication</h3>
+            <p>Another challenge I ran into was managing updates between related components (e.g., HP changes affecting multiple displays).
+            </p>
+            <p>To fix this, I implemented a service based event system.</p>
+            <pre><code class="language-typescript">
+@Injectable({
+    providedIn: 'root'
+})
+export class CharacterUpdateService {
+    private characterUpdate = new Subject<CharacterUpdate>();
+                    
+    characterUpdate$ = this.characterUpdate.asObservable();
+                  
+    emitUpdate(update: CharacterUpdate): void {
+        this.characterUpdate.next(update);
+    }
+}</code></pre>
+            <div class="achievement">
+                <span>🎯</span>
+                Components are Communicating
+            </div>
+        </div>
+
+        <div class="expanded-content" id="quality-assurance">
+            <button class="close-btn">&times;</button>
+            <h2>Testing Strategy</h2>
+            <h3>Unit Testing (Jasmine)</h3>
+            <p>One of the major things that needed to be tested was the HP management system as it involved a lot of calculations.</p>
+            <p>I first created a mock character to test with, and made a test to check if the character was created.</p>
+            <pre><code class="language-javascript">// Mock character data omitted for brevity
+it('should be created', () => {
+    expect(service).toBeTruthy();
+});</code></pre>
+            <p>Once I was sure the character was created, I created a series of tests to check if the HP management system and applying the Aid spell worked.</p>
+            <pre><code class="language-javascript">// Example of a test for applyDamage
+describe('applyDamage', () => {
+    it('should reduce current HP by damage amount', () => {
+        service.applyDamage(mockCharacter, 10);
+        expect(mockCharacter.currentHp).toBe(35);
+    });</code></pre>
+            <h3>End-to-End Testing (Cypress)</h3>
+            <p>Once I was sure the actual mechanics worked, I created a series of tests to check if the UI worked.</p>
+            <pre><code class="language-javascript">// Example of a test for the HP Management UI
+describe('HP Management', () => {
+    beforeEach(() => {
+        cy.visit('/character/2')
+    })
+                  
+    it('should apply damage correctly', () => {
+        cy.get('.hp-display').should('contain', '45/45')
+        cy.get('input[placeholder="Damage"]').type('5')
+        cy.get('button').contains('Apply Damage').click()
+        cy.get('.hp-display').should('contain', '40/45')
+    })</code></pre>
+    <p>These tests were automated using npm scripts for easy testing.</p>
+        </div>
+
+        <div class="expanded-content" id="key-milestones">
+            <button class="close-btn">&times;</button>
+            <h2>Key Milestones</h2>
+            <div class="achievement">Angular project configuration</div>
+            <div class="achievement">Character sheet display</div>
+            <div class="achievement">Backend API setup with Express</div>
+            <div class="achievement">Equipment and inventory tracking</div>
+            <div class="achievement">HP management system</div>
+        </div>
+
+        <div class="expanded-content" id="project-timeline">
+            <button class="close-btn">&times;</button>
+            <h3>Timeline</h3>
+            <ul>
+                <li>Initial Setup and Core Character Features: November 11 - 12 2024</li>
+                <li>Testing Implementation and Equipment System: November 13 - 14 2024</li>
+                <li>Backend Integration and Data Persistence: November 16 - 18 2024</li>
+                <li>UI/UX Improvements: November 19 - 20 2024</li>
+                <li>Improvements: Continuous</li>
+            </ul>
+        </div>
+
+        <nav class="project-navigation">
+            <a href="../projects.html" class="waves-effect waves-light btn">
+                All Projects
+            </a>
+            <a href="dnd-character-sheets.html" class="waves-effect waves-light btn">
+                Next Project<i class="material-icons right">chevron_right</i>
+            </a>
+        </nav>
+        <footer>
+            <div class="top-footer-wrapper">
+                <div class="footer-logo">
+                    <img src="../favicon.ico">
+                </div>
+                <div class="footer-social-icons">
+                    <a href="mailto:lexi@lexidugo.com?subject=Portfolio%20Inquiry" target="_blank"><i class="fa-solid fa-envelope fa-2x"></i></a>
+                    <a href="instagram.com/lexidugo" target="_blank"><i class="fa-brands fa-instagram fa-2x"></i></a>
+                    <a href="linkedin.com/in/lexidugo" target="_blank"><i class="fa-brands fa-linkedin fa-2x"></i></a>
+                    <a href="github.com/alstdu"><i class="fa-brands fa-github fa-2x"></i></a>
+                </div>
+            </div>
+            <div class="bottom-footer">
+                <p>Hand coded by Lexi Dugo &copy;2024</p>
+            </div>
+        </footer>
+    </main>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.24.1/prism.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.24.1/components/prism-sql.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.24.1/components/prism-typescript.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.24.1/plugins/line-numbers/prism-line-numbers.min.js"></script>
+    <script src="../scripts/project-pages.js"></script>
+</body>
+</html> 
