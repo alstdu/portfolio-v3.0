@@ -1,14 +1,9 @@
+/* CONSIDER USING MASONRY LAYOUT FOR PROJECTS */
+
+/* Basic container setup */
 .portfolio-container {
-    display: grid;
-    grid-template-columns: 25% 75%;
-    grid-template-rows: auto auto;
-    gap: 20px;
     max-width: 1200px;
     margin: 0 auto;
-    margin-bottom: 4em;
-}
-
-.portfolio-title {
     padding: 20px;
 }
 
@@ -24,49 +19,41 @@
     color: #666;
 }
 
+/* Desktop layout */
+.portfolio-container {
+    display: grid;
+    grid-template-columns: 300px 1fr;
+    gap: 20px;
+}
+
 .featured-project {
     grid-column: 2;
 }
 
-.project-card {
-    grid-column: span 1;
+.projects-grid {
+    grid-column: 1 / -1;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
 }
 
-@media (min-width: 769px) {
-    .portfolio-container {
-        display: grid;
-        grid-template-columns: 25% 75%;
-        grid-template-areas: 
-            "title featured"
-            "cards cards";
-        gap: 20px;
-    }
-    
-    .portfolio-title {
-        grid-area: title;
-    }
-    
-    .featured-project {
-        grid-area: featured;
-    }
-    
+/* Tablet layout */
+@media (max-width: 1024px) {
     .projects-grid {
-        grid-area: cards;
-        display: grid;
-        grid-template-columns: repeat(3, 1fr);
-        gap: 20px;
+        grid-template-columns: repeat(2, 1fr);
     }
 }
 
+/* Mobile layout */
 @media (max-width: 768px) {
     .portfolio-container {
         grid-template-columns: 1fr;
-        grid-template-areas: 
-            "title"
-            "featured"
-            "cards";
     }
-    
+
+    .featured-project {
+        grid-column: 1;
+    }
+
     .projects-grid {
         grid-template-columns: 1fr;
     }
@@ -126,12 +113,10 @@
     box-shadow: 0 5px 15px rgba(0,0,0,0.1);
 }
 
-/* Hover Effects */
 .project-link-wrapper:hover .project-image {
     transform: scale(1.1);
 }
 
-/* Layout Styles */
 main {
     display: flex;
     flex-direction: column;
@@ -157,7 +142,6 @@ main {
     background-color: #bb3eff; 
 }
 
-/* Add the accent class if you want to highlight part of the title */
 .accent {
     color: #CB67FF;
 }
