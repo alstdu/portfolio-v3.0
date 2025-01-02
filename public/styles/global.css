@@ -112,6 +112,18 @@ footer {
 .menu-icon::before { top: -8px; }
 .menu-icon::after { bottom: -8px; }
 
+.menu-toggle[aria-expanded="true"] .menu-icon {
+    background-color: transparent;
+}
+
+.menu-toggle[aria-expanded="true"] .menu-icon::before {
+    transform: rotate(45deg) translate(5.45px, 5.45px);
+}
+
+.menu-toggle[aria-expanded="true"] .menu-icon::after {
+    transform: rotate(-45deg) translate(5.45px, -5.45px);
+}
+
 /* Overlay for mobile menu */
 .nav-overlay {
     display: none;
@@ -131,18 +143,6 @@ footer {
 @media (max-width: 768px) {
     .menu-toggle {
         display: block;
-    }
-
-    .menu-toggle[aria-expanded="true"] .menu-icon {
-        background-color: transparent;
-    }
-
-    .menu-toggle[aria-expanded="true"] .menu-icon::before {
-        transform: rotate(45deg) translate(5px, 5px);
-    }
-
-    .menu-toggle[aria-expanded="true"] .menu-icon::after {
-        transform: rotate(-45deg) translate(5px, -5px);
     }
 
     .nav {
